@@ -17,7 +17,7 @@ PKG_RELEASE:=1
 # uboot-layerscape's source code.
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/yangbolu1991/u-boot-lede.git
-PKG_SOURCE_VERSION:=470d1e2af567b27e247a005e004e6216df5c6f82
+PKG_SOURCE_VERSION:=b973f9b8754440d8db4ead6cd59a6ad2f7378806
 
 PKG_MAINTAINER:=Yangbo Lu <yangbo.lu@nxp.com>
 
