@@ -17,7 +17,7 @@ PKG_RELEASE:=1
 # uboot-layerscape's source code.
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/yangbolu1991/u-boot-lede.git
-PKG_SOURCE_VERSION:=050c7f11e2ad1a005baa8816699a5c4543dab70c
+PKG_SOURCE_VERSION:=43cb4c0fcab237f8daa39c393cc1441b76b99fcf
 
 PKG_MAINTAINER:=Yangbo Lu <yangbo.lu@nxp.com>
 
@@ -46,6 +46,7 @@ define Build/InstallDev
 	$(CP) $(PKG_BUILD_DIR)/ls1043ardb-uboot.bin $(STAGING_DIR_IMAGE)/ls1043ardb-armv8_32b-uboot.bin
 	$(CP) $(PKG_BUILD_DIR)/ls1046ardb-uboot.bin $(STAGING_DIR_IMAGE)/ls1046ardb-armv8_32b-uboot.bin
 	$(CP) $(PKG_BUILD_DIR)/ls1012ardb-uboot.bin $(STAGING_DIR_IMAGE)/ls1012ardb-armv8_32b-uboot.bin
+	$(CP) $(PKG_BUILD_DIR)/ls1012afrdm-uboot.bin $(STAGING_DIR_IMAGE)/ls1012afrdm-armv8_32b-uboot.bin
 endef
 
 $(eval $(call BuildPackage,uboot-layerscape-armv8_32b))
