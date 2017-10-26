@@ -18,6 +18,7 @@ PKG_RELEASE:=1
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/yangbolu1991/u-boot-lede.git
 PKG_SOURCE_VERSION:=43cb4c0fcab237f8daa39c393cc1441b76b99fcf
+PKG_MIRROR_HASH:=f0ef74cd0a4aecd727e8c4046b50a869ddec8a4f382da77475ec433f86cdc39a
 
 PKG_MAINTAINER:=Yangbo Lu <yangbo.lu@nxp.com>
 

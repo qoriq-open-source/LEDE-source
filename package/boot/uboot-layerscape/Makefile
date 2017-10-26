@@ -15,6 +15,7 @@ PKG_RELEASE:=1
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/qoriq-open-source/u-boot.git
 PKG_SOURCE_VERSION:=fbedf04c1bad675eadbac86febdcf759441a02af
+PKG_MIRROR_HASH:=4f92c93ce1258c54c314a8259c6849ca62f035f36fe1ddb6f7851281c2f5c244
 
 include $(INCLUDE_DIR)/u-boot.mk
 include $(INCLUDE_DIR)/package.mk
