@@ -1,0 +1,27 @@
+From 2f6a1124cc354b1e0306e0eaa0d3ea99e398cd9b Mon Sep 17 00:00:00 2001
+From: Yangbo Lu <yangbo.lu@nxp.com>
+Date: Mon, 30 Oct 2017 17:41:17 +0800
+Subject: [PATCH] soc: fsl: support ls1012a in guts driver
+
+This patch is to add support for ls1012a in guts driver.
+
+Signed-off-by: Yangbo Lu <yangbo.lu@nxp.com>
+---
+ drivers/soc/fsl/guts.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/soc/fsl/guts.c b/drivers/soc/fsl/guts.c
+index 7d28784a..cc04a5bd 100644
+--- a/drivers/soc/fsl/guts.c
++++ b/drivers/soc/fsl/guts.c
+@@ -212,6 +212,7 @@ static const struct of_device_id fsl_guts_of_match[] = {
+ 	{ .compatible = "fsl,ls1046a-dcfg", },
+ 	{ .compatible = "fsl,ls2080a-dcfg", },
+ 	{ .compatible = "fsl,ls1088a-dcfg", },
++	{ .compatible = "fsl,ls1012a-dcfg", },
+ 	{}
+ };
+ MODULE_DEVICE_TABLE(of, fsl_guts_of_match);
+-- 
+2.14.1
+
