@@ -24,7 +24,6 @@ define Package/restool
   CATEGORY:=Network
   DEPENDS:=@TARGET_layerscape
   TITLE:=Layerscape DPAA2 dynamical management tool
-  URL:=http://sw-stash.freescale.net/scm/dash/restool.git
 endef
 
 MAKE_FLAGS += \
