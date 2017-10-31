@@ -100,7 +100,7 @@ named as lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin.
   => tftp a0000000 lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin
   => i2c mw 0x24 0x7 0xfc;i2c mw 0x24 0x3 0xf5
   => sf probe 0:0
-  => sf erase 0 $filesize
+  => sf erase 0 +$filesize
   => sf write a0000000 0 $filesize
   => reset
 
@@ -111,7 +111,7 @@ named as lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin.
 
   => tftp 96000000 lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin
   => sf probe 0:0
-  => sf erase 0 $filesize
+  => sf erase 0 +$filesize
   => sf write 96000000 0 $filesize
   => reset
 
@@ -122,7 +122,7 @@ named as lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin.
 
   => tftp a0000000 lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin
   => sf probe 0:1
-  => sf erase 0 $filesize
+  => sf erase 0 +$filesize
   => sf write a0000000 0 $filesize
   => cpld reset altbank
 
@@ -137,13 +137,12 @@ named as lede-layerscape-<subtarget>-<device>-squashfs-firmware.bin.
   => sf write a0000000 0 $filesize
   => qix altbank
 
+  Note: old version u-boot of ls1088ardb may use below commands to switch to
+  bank1 instead of 'qix altbank'.
+  => i2c mw 66 50 20;i2c mw 66 10 20;i2c mw 66 10 21
 
-4. Limitations and known issues
-------------------------------
-- None
 
-
-5. Other references and sources
+4. Other references and sources
 -------------------------------
 - NXP LSDK site: https://lsdk.github.io/
 
